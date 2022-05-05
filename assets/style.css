@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    outline: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #74ebd5;
+    margin: 0px;
+}
+button{
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 80%;
+}
+
+.content-page{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.header {
+    color: whitesmoke;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+
+.content-poke-ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+.img-poke{
+    max-width: 170px;
+    min-width: 85px;
+}
+
+.img-poke:hover{
+    opacity: 90%;
+}
+
+.li-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    
+}
+
+.li-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 25px;
+    
+}
+
+.btn-info-poke{
+    margin: 12px;
+    background-color: #74ebd5;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 80%;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.name-poke{
+    margin: 12px;
+    color: #74ebd5;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+.name-poke-error{
+    margin: 12px;
+    color: #74ebd5;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+}
+
+#search-poke{
+    text-align: center;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.input-btn{
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    color: #74ebd5;
+    background-color: white;
+    margin: 10px;
+}
+
+.loader{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #74ebd5;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader > div{
+    height: 100px;
+    width: 100px;
+    border: 10px solid white;
+    border-top-color:aqua;
+    position: absolute;
+    border-radius: 50%;
+    animation: spin 2.0s infinite linear;
+}
+
+.p-loader{
+    color: white;
+    font-size: 14px;
+}
+
+@keyframes spin {
+    100%{
+       transform: rotate(360deg); 
+    }
+}
+
+@media only screen and (max-width: 455px){
+    .li-items{
+        width: 80%;
+    }
+    #search-poke{
+        padding: 15px 40px;
+    }
+}
